@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ConvertPipe } from './convert.pipe';
+import { ConvertComponent } from './convert/convert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConvertPipe
+    ConvertPipe,
+    ConvertComponent
   ],
   imports: [
     BrowserModule,

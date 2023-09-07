@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
-@Component({
-  selector: 'app-convert',
-  templateUrl: './convert.component.html',
-  styleUrls: ['./convert.component.css']
+@Pipe({
+  name: 'convert'
 })
-export class ConvertComponent {
+export class ConvertPipe implements PipeTransform {
+
+  transform(fromcurrency: number, toCurrency: number,amount: number): any {
+      return Math.round(toCurrency*amount/fromcurrency) 
+  }
 
 }

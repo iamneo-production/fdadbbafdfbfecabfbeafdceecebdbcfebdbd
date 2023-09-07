@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ConvertPipe } from './Convert.pipe';
+import { ConvertPipe } from './convert.pipe';
 
 @Component({
   selector: 'app-root',
